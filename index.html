@@ -7,7 +7,7 @@
     <body>
        <div class="container">
         <header class="main-header">
-            <a class="logo" href="index.html">
+            <a class="logo">
             <img src="#" width="" height="" alt="Седона">
             </a>   
             <nav class="main-navigation">
@@ -29,6 +29,7 @@
         </header>
         <main>       
         <div class="welcome">
+            <img src="#" wight="" height="" alt="Welcome to the gorgeous">
         </div>
             <h1 class="desc-definition">Седона - Небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
@@ -89,7 +90,7 @@
         <div class="offer">
             <h2 class="offer-title">Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <h2 class="offer-search">Поиск гостиницы в Седоне</h2>
+            <a class="offer-search">Поиск гостиницы в Седоне</a>
         </div>
         <div class="map">            
         </div>           
@@ -107,16 +108,42 @@
             </div>
         </footer>
         </div>
-        <!--Тут голову можно сломать, не очень поняла что делать-->
+
         <form class="search" action="#" method="post" action="https://echo.htmlacademy.ru">
-            <label for="arrival">Дата заезда:</label>
-            <input id="arrival" type="date" name="arrival" value="arrival">
-            <label for="exit">Дата выезда:</label>
-            <input id="exit" type="date" name="exit" value="exit">
-            <label for="grown">Взрослые:</label>
-            <input id="grown" type="" name="grown" value="grown">
-            <label for="children">Дети:</label>
-            <input id="children" type="" name="children" value="children">
+            <div>
+                <div>
+                    <label for="arrival">Дата заезда:</label>
+                </div>
+                <div>
+                    <label for="exit">Дата выезда:</label>
+                </div>
+                <div>
+                    <label for="grown">Взрослые:</label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input id="arrival" type="date" name="arrival" value="arrival">
+                    <i class="icon-calendar"></i>
+                </div>            
+                <div>
+                    <input id="exit" type="date" name="exit" value="exit">
+                    <i class="icon-calendar"></i>
+                </div>                       
+                <div>
+                    <div>
+                        <i icon="icon-minus"></i>
+                        <input id="children" type="" name="children" value="children">
+                        <i icon="icon-plus"></i>
+                    </div>
+                    <label for="children">Дети:</label>
+                    <div>
+                        <i icon="icon-minus"></i>
+                        <input id="grown" type="" name="grown" value="grown">
+                        <i icon="icon-plus"></i>
+                    </div>                    
+                </div>
+            </div>   
             <button type="submit" class="search-btn">Найти</button>                  
         </form> 
     </body>
