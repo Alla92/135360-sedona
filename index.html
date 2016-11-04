@@ -7,9 +7,9 @@
     </head>
     <body>
        <div class="container">
-        <header class="main-header">
+        <header class="main-header clearfix">
             <a class="logo">
-            <img src="img/logo%20(2).png" width="138" height="70" alt="Седона">
+            <img src="img/logo.png" width="138" height="70" alt="Седона">
             </a>   
             <nav class="main-navigation">
                 <ul>
@@ -30,59 +30,61 @@
         </header>
         <main>       
         <div class="welcome">
-            <img src="img/welcome.png" wight="458" height="352" alt="Welcome to the gorgeous">
+            <div class="welcome-img"><img src="img/welcome.png" wight="458" height="352" alt="Welcome to the gorgeous"></div>
         </div>
-            <h1 class="desc-definition">Седона - Небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <div class="desc-definition">
+            <h1 class="titli-definition">Седона - Небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-        <div class="benefits">
-            <div class="benefits-text">
+        </div>
+        <div class="benefits clearfix">
+            <div class="benefits-text1">
                 <h2>Настоящий городок</h2>
                 <span>№1</span>
                 <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="benefits-image">
-               <img src="img/town.jpg" wight="512" height="256" alt="Настоящий городок">
+            <div class="benefits-image1">
+               <img src="img/index-benefits.jpg" wight="512" height="256" alt="Настоящий городок">
             </div>
         </div>
         <div class="features">
-            <div class="features-item">
-                <img src="img/house.png" wight="75" height="72" alt="Жилье">
+            <div class="features-item1">
+                <img src="img/features-house.png" wight="75" height="72" alt="Жилье">
                 <h2 class="features-name">Жилье</h2>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
             </div>
-            <div class="features-item">
-                <img src="img/food.png" wight="74" height="70" alt="Еда">
+            <div class="features-item2">
+                <img src="img/features-food.png" wight="74" height="70" alt="Еда">
                 <h2 class="features-name">Еда</h2>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
-            <div class="features-item">
-                <img src="img/souvenirs.png" wight="64" height="76" alt="Сувениры">
+            <div class="features-item3">
+                <img src="img/features-souvenirs.png" wight="64" height="76" alt="Сувениры">
                 <h2 class="features-name">Сувениры</h2>
                 <p>Не только китайского, но и местного производства!</p>
             </div>
         </div>
         <div class="benefits">
-            <div class="benefits-image">
-                <img src="img/bridge.jpg" wight="512" height="256" alt="Мост дьявола">
+            <div class="benefits-img-bridge">
+                <img src="img/index-benefits1.jpg" wight="512" height="256" alt="Мост дьявола">
             </div>
-            <div class="benefits-text">
+            <div class="benefits-text-bridge">
                 <h2>Там есть мост дьявола</h2>
                 <span>№2</span>
                 <p>Да, но нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
         </div>
         <div class="features gray-bg">
-            <div class="features-item">
+            <div class="features-item1">
                 <h2 class="features-name">Небольшая площадь</h2>
                 <span>№3</span>
                 <p>Все достопримечательности находятся очень блзко</p>
             </div>
-            <div class="features-item">
+            <div class="features-item2">
                 <h2 class="features-name">Красивая дорого</h2>
                 <span>№4</span>
                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
-            <div class="features-item">
+            <div class="features-item3">
                 <h2 class="features-name">Мало туристов</h2>
                 <span>№5</span>
                 <p>Большинство Едет в гранд каньон и толпится там</p>
@@ -91,14 +93,16 @@
         <div class="offer">
             <h2 class="offer-title">Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a class="offer-search">Поиск гостиницы в Седоне</a>
+            <div class="offer-search">
+            <a href="#" class="search-hostel">Поиск гостиницы в Седоне</a>
+            </div>
         </div>
         <div class="map"> 
-            <img src="img/map.jpg" wight="768" height="593" alt="Карта">                   
+            <img src="img/indexmap.jpg" wight="768" height="593" alt="Карта">                   
         </div>           
         </main>    
-        <footer>
-            <div>#Visitssedona</div>
+        <footer class="main-footer">
+            <div class="footer-visit">#Visitssedona</div>
             <div class="social">
                 <a href="#" class="social-btn socials-tv">Твитер</a>
                 <a href="#" class="social-btn socials-fb">Фейсбук</a>
@@ -106,47 +110,65 @@
             </div>
             <div class="copyright">
                 <p>Website by</p>
-                <img src="img/logo.png" wight="" height="" alt="html academy">
+                <img src="img/html-academy.png" wight="" height="" alt="html academy">
             </div>
         </footer>
-        </div>
-
+        
         <form class="search" action="#" method="post" action="https://echo.htmlacademy.ru">
-            <div>
-                <div>
-                    <label for="arrival">Дата заезда:</label>
-                </div>
-                <div>
-                    <label for="exit">Дата выезда:</label>
-                </div>
-                <div>
-                    <label for="grown">Взрослые:</label>
-                </div>
+            <div class="search-top">
+               <div class="search-label">
+                <label for="arrival">Дата заезда:</label><br>
+                <label for="exit">Дата выезда:</label><br>
+                <label for="grown">Взрослые:</label><br>
+               </div>
             </div>
+            <div class="search-input">
+               <input id="arrival" type="date" name="arrival" value="Дата заезда"><br>
+                <i class="icon-calendar"></i>
+                <input id="exit" type="date" name="exit" value="Дата выезда"><br>
+                <i class="icon-calendar"></i>
+            </div>
+            <div class="search-grown">
+                <i icon="icon-minus"></i>
+                <input id="grown" type="number" name="grown" value="Взрослые"><br>              
+                <i icon="icon-plus"></i>
+            </div>
+            <div class="search-children">
+                <label for="children">Дети:</label>
+                <i icon="icon-minus"></i>
+                <input id="children" type="number" name="children" value="Дети">            
+                <i icon="icon-plus"></i>
+            </div>                
+            
+               
+               
+               
+           <!-- <div class="search-arrival">
+                <label for="arrival">Дата заезда:</label>
+                <input id="arrival" type="date" name="arrival" value="Дата заезда">
+                <i class="icon-calendar"></i>
+            </div>
+            <div class="search-exit">
+                <label for="exit">Дата выезда:</label>
+                <input id="exit" type="date" name="exit" value="Дата выезда">
+                <i class="icon-calendar"></i>
+            </div>
+            <div class="search-grown clearfix">
+                <label for="grown">Взрослые:</label>
+                <i icon="icon-minus"></i>
+                <input id="grown" type="number" name="grown" value="Взрослые">                
+                <i icon="icon-plus"></i>
+            </div>        
+            <div class="search-children clearfix">    
             <div>
-                <div>
-                    <input id="arrival" type="date" name="arrival" value="arrival">
-                    <i class="icon-calendar"></i>
-                </div>            
-                <div>
-                    <input id="exit" type="date" name="exit" value="exit">
-                    <i class="icon-calendar"></i>
-                </div>                       
-                <div>
-                    <div>
-                        <i icon="icon-minus"></i>
-                        <input id="children" type="" name="children" value="children">
-                        <i icon="icon-plus"></i>
-                    </div>
-                    <label for="children">Дети:</label>
-                    <div>
-                        <i icon="icon-minus"></i>
-                        <input id="grown" type="" name="grown" value="grown">
-                        <i icon="icon-plus"></i>
-                    </div>                    
-                </div>
-            </div>   
-            <button type="submit" class="search-btn">Найти</button>                  
+                <label for="children">Дети:</label>
+                <i icon="icon-minus"></i>
+                <input id="children" type="number" name="children" value="Дети">            
+                <i icon="icon-plus"></i>
+            </div>  
+            </div>
+            <button type="submit" class="search-btn">Найти</button> -->              
         </form> 
+    </div>
     </body>
 </html>
