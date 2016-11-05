@@ -48,29 +48,29 @@
             <input id="apartments" type="checkbox" name="apartments" value="apartments" checked>
             <label for="apartments">Апартаменты</label>
         </div>
-    </form>
-    <div class="selection-right">
-    <div class="selection-price">
-        <h2>Стоимость в сутки (Р)</h2> 
-        <label>от 
-        <input class="min-price" type="text" value="0">
-        </label> 
-        <label>до 
-        <input class="max-price" type="text" value="3 000">
-        </label> 
-    </div> 
-    <div class="range-controls"> 
-    <div class="scale">
-        <div style="width: 80%;" class="bar">            
+        <div class="selection-right">
+        <div class="selection-price">
+            <h2>Стоимость в сутки (Р)</h2> 
+            <label>от 
+            <input class="min-price" type="text" value="0">
+            </label> 
+            <label>до 
+            <input class="max-price" type="text" value="3 000">
+            </label> 
+        </div> 
+        <div class="range-controls"> 
+        <div class="scale">
+            <div style="width: 80%;" class="bar">            
+            </div>
+        </div> 
+            <div class="toggle min-toggle">            
+            </div> 
+            <div class="toggle max-toggle">            
+            </div> 
+        </div> 
+            <button type="submit" class="btn-filter">Показать</button> 
         </div>
-    </div> 
-        <div class="toggle min-toggle">            
-        </div> 
-        <div class="toggle max-toggle">            
-        </div> 
-    </div> 
-        <button type="submit" class="btn-filter">Показать</button> 
-    </div>
+    </form>    
     </div>
     <div class="hotel-sorting">
         <span class="hotel-title">Найдено:3</span>
@@ -87,6 +87,7 @@
         </div>
         <div class="hotel-info">
             <a href="#" class="hotel-title">Amara Resort & Spa</a>
+            <div class="hotel-wrapper clearfix">
             <div class="hotel-info-parttel">
                 <p>Гостиница</p>
                 <a href="#" class="hotel-more">Подробнее</a>
@@ -94,6 +95,7 @@
             <div class="hotel-info-part">
                 <p>От 3500 Р</p>
                 <a href="#" class="hotel-reservation">Забронировать</a> 
+            </div>
             </div>           
         </div>            
         <div class="hotel-right-block">
@@ -108,7 +110,8 @@
         </div>
         <div class="hotel-info">
            <a href="#" class="hotel-title">Desert Quail Inn</a>
-           <div class="hotel-info-parttel">
+           <div class="hotel-wrapper clearfix">
+            <div class="hotel-info-parttel">
                <p>Мотель</p>
                <a href="#" class="hotel-more">Подробнее</a>
            </div>
@@ -116,7 +119,8 @@
                 <p>От 2000 Р.</p>
                 <a href="#" class="hotel-reservation">Забронировать</a>
             </div>
-         </div>
+            </div>
+        </div>
         <div class="hotel-right-block">
             <div class="star"></div>
             <div class="rating">Рейтинг:8,9</div>
@@ -128,6 +132,7 @@
         </div>
         <div class="hotel-info">
             <a href="#" class="hotel-title">Villas at poco diablo</a>
+            <div class="hotel-wrapper clearfix">
             <div class="hotel-info-parttel">
                 <p>Апартамены</p>
                 <a href="#" class="hotel-more">Подробнее</a>
@@ -136,6 +141,7 @@
                 <p>От 4000 Р.</p>
                 <a href="#" class="hotel-reservation">Забронировать</a>
             </div>
+            </div>
        </div>
         <div class="hotel-right-block">
             <div class="star"></div>
@@ -143,17 +149,17 @@
         </div>    
     </div>
     <footer class="main-footer">
-        <div class="footer-visit">#Visitssedona</div>
-        <div class="social">
-            <a href="#" class="social-btn socials-tv">Твитер</a>
-            <a href="#" class="social-btn socials-fb">Фейсбук</a>
-            <a href="#" class="social-btn social-yt">You tybe</a>
-        </div>
-        <div class="copyright">
-            <p>Website by</p>
-            <img src="img/html-academy.png" wight="" height="" alt="html academy">
-        </div>
-    </footer>
+            <div class="footer-visit">#Visitssedona</div>
+            <div class="footer-social">
+                <a href="#" class="social-btn socials-tv">Твитер</a>
+                <a href="#" class="social-btn socials-fb">Фейсбук</a>
+                <a href="#" class="social-btn social-yt">You tybe</a>
+            </div>
+            <div class="copyright">
+                <p>Website by</p>
+                <img src="img/html-academy.png" wight="" height="" alt="html academy">
+            </div>
+        </footer>
     </div>    
     </body>
 </html>
