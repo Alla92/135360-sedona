@@ -63,7 +63,7 @@ a {
     left: 50%;
     margin-right: auto;
     margin-left: auto;
-    transform: translate(-50px;)
+    transform: translateX(-50%);
     }
 
 .clearfix::after {
@@ -72,17 +72,17 @@ a {
   clear: both;}
 
 .desc-definition{
-    padding: 31px 0;
     line-height: 26px;
     text-align: center;
     }
 
 .title-definition{
+    padding-top: 61px;
     font-size: 21px;
     color: #000;}
 
 .desc-definition p{
-    margin: 20px 0;
+    padding-bottom: 56px;
     
 }
 
@@ -104,32 +104,34 @@ a {
     }
 
 .benefits-text {  
-    padding: 0 4%;    
-    background-color: #81b3d2;
-    padding-top: 35px;    
-    width: 33,3334%;
+    padding-top: 35px;
+    padding-left: 63px;
+    padding-right: 63px;
+    background-color: #81b3d2;        
+    width: 33.3334%;
     text-align: center;
     color: white;
     text-transform: uppercase;
+    box-sizing: border-box;
     float: left;}
 
 .benefits-text:nth-child(2){
     float: right;
 }
+.benefits-text p {
+    padding-bottom: 43px;
+}
 
 .benefits-text h2{
-    margin: 10px auto;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;}
 
-.benefits-text p { 
-    margin: 22px auto;}
-
 .benefits-image{
     position: relative;
     overflow: hidden;
-    width: 66,6667%;
+    width: 66.6667%;
+    min-height: 256px;
     float: left;
     }
 .benefits-image:nth-child(2) {
@@ -137,22 +139,22 @@ a {
 }
 
 .benefits-image img {
+    position: absolute;
     display: block;
     width: 100%;
     height: 256px;
 }
 
-.features{
-    padding-top: 57px;
-    padding-bottom: 65px;
+.features{ 
+    padding-left: 4%;
+    padding-right: 4%;
     text-transform: uppercase;
-    }
+        }
 
 .features-name {
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
-    width: 33.33%;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -160,19 +162,16 @@ a {
 
 }
 
-.features-item {
-    padding: 0;
-    padding-left: 5%;
-    padding-right: 5%;
+.features-item {   
     box-sizing: border-box;
-    width: 33,3334%;
+    padding-top: 50px;
+    padding-bottom: 66px; 
+    width: 33.3334%;
     text-align: center;
     float: left;}
 
 .gray-bg {
-    background-color: #eeeeee;
-    padding-top: 47px;
-    padding-bottom: 41px;}
+    background-color: #eeeeee;}
 
 .offer {
     padding-top: 57px;
