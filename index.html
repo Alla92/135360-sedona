@@ -5,7 +5,7 @@
         <title>Главная страница</title>
         <link href="css/normalize.css">
         <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+          <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
     </head>
     <body>
        <div class="container">
@@ -40,9 +40,9 @@
         </div>
         <div class="benefits clearfix">
             <div class="benefits-text">
-                <h2>Настоящий<br> городок</h2>
-                <span>№1</span>
-                <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                <h2>Настоящий городок</h2>
+                <span>&ndash; №1 &ndash;</span>
+                <p>Седона &ndash; не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="benefits-image">
                <img src="img/index-benefits.jpg" wight="512" height="256" alt="Настоящий городок">
@@ -51,17 +51,17 @@
         <div class="features clearfix">
             <div class="features-item">
                 <img src="" wight="75" height="72" alt="">
-                <h2 class="features-name">Жилье</h2>
+                <h2 class="features-title features-title-house">Жилье</h2>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
             </div>
             <div class="features-item">
                 <img src="" wight="74" height="70" alt="">
-                <h2 class="features-name">Еда</h2>
+                <h2 class="features-title features-title-food">Еда</h2>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
             <div class="features-item">
                 <img src="" wight="64" height="76" alt="">
-                <h2 class="features-name">Сувениры</h2>
+                <h2 class="features-title features-title-souvenirs">Сувениры</h2>
                 <p>Не только китайского, но и местного производства!</p>
             </div>
         </div>
@@ -71,30 +71,30 @@
             </div>
             <div class="benefits-text">
                 <h2>Там есть<br> мост дьявола</h2>
-                <span>№2</span>
+                <span>&ndash; №2 &ndash;</span>
                 <p>Да, но нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
         </div>
-        <div class="features gray-bg clearfix">
-            <div class="features-item">
-                <h2 class="features-name">Небольшая площадь</h2>
-                <span>№3</span>
-                <p>Все достопримеча-<br>тельности находятся очень блзко</p>
+        <div class="features-call gray-bg clearfix">
+            <div class="call-item">
+                <h2 class="features-name-call">Небольшая площадь</h2>
+                <span>&ndash; №3 &ndash;</span>
+                <p>Все достопримечательности находятся очень блзко</p>
             </div>
-            <div class="features-item">
-                <h2 class="features-name">Красивая дорога</h2>
-                <span>№4</span>
+            <div class="call-item">
+                <h2 class="features-name-call">Красивая дорога</h2>
+                <span>&ndash; №4 &ndash;</span>
                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
-            <div class="features-item">
-                <h2 class="features-name">Мало туристов</h2>
-                <span>№5</span>
+            <div class="call-item">
+                <h2 class="features-name-call">Мало<br> туристов</h2>
+                <span>&ndash; №5 &ndash;</span>
                 <p>Большинство Едет в гранд каньон и толпится там</p>
             </div>
         </div>
         <div class="offer clearfix">
             <h2 class="offer-title">Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <div class="offer-search">
             <a href="#" class="search-hostel">Поиск гостиницы в Седоне</a>
             </div>
@@ -111,66 +111,38 @@
             </div>
             <div class="copyright">
                 <p>Website by</p>
-                <img src="img/html-academy.png" wight="" height="" alt="html academy">
+                <a class="logo-htmlacademy"><img src="img/html-academy.png" wight="" height="" alt="html academy"></a>
             </div>
-        </footer>
-        
-        <form class="search" action="#" method="post" action="https://echo.htmlacademy.ru">
-            <div class="search-top">
-               <div class="search-label">
-                <label for="arrival">Дата заезда:</label><br>
-                <label for="exit">Дата выезда:</label><br>
-                <label for="grown">Взрослые:</label><br>
-               </div>
-            </div>
-            <div class="search-input">
-               <input id="arrival" type="date" name="arrival" value="Дата заезда"><br>
-                <i class="icon-calendar"></i>
-                <input id="exit" type="date" name="exit" value="Дата выезда"><br>
-                <i class="icon-calendar"></i>
-            </div>
-            <div class="search-grown">
-                <i icon="icon-minus"></i>
-                <input id="grown" type="number" name="grown" value="Взрослые"><br>              
-                <i icon="icon-plus"></i>
-            </div>
-            <div class="search-children">
-                <label for="children">Дети:</label>
-                <i icon="icon-minus"></i>
-                <input id="children" type="number" name="children" value="Дети">            
-                <i icon="icon-plus"></i>
-            </div>       
-            <button type="submit" class="search-btn">Найти</button>       
-            
-               
-               
-               
-           <!-- <div class="search-arrival">
-                <label for="arrival">Дата заезда:</label>
-                <input id="arrival" type="date" name="arrival" value="Дата заезда">
-                <i class="icon-calendar"></i>
-            </div>
-            <div class="search-exit">
-                <label for="exit">Дата выезда:</label>
-                <input id="exit" type="date" name="exit" value="Дата выезда">
-                <i class="icon-calendar"></i>
-            </div>
-            <div class="search-grown clearfix">
-                <label for="grown">Взрослые:</label>
-                <i icon="icon-minus"></i>
-                <input id="grown" type="number" name="grown" value="Взрослые">                
-                <i icon="icon-plus"></i>
-            </div>        
-            <div class="search-children clearfix">    
-            <div>
-                <label for="children">Дети:</label>
-                <i icon="icon-minus"></i>
-                <input id="children" type="number" name="children" value="Дети">            
-                <i icon="icon-plus"></i>
-            </div>  
-            </div>
-            <button type="submit" class="search-btn">Найти</button> -->              
-        </form> 
+        </footer>        
+        <div class="search">
+            <form action="#" method="post" action="https://echo.htmlacademy.ru">
+                <div class="search-date">
+                    <div class="search-form">
+                        <label for="arrive">Дата заезда:</label>
+                        <input id="arrival" type="date" name="arrival" value="Дата заезда">
+                    </div>
+                    <div class="search-form">
+                        <label for="exit">Дата выезда:</label>
+                        <input id="exit" type="date" name="exit" value="Дата выезда"><br>
+                    </div>
+                </div>
+                <div class="search-form">
+                    <div class="search-form-number">
+                        <label for="grown">Взрослые:</label>
+                        <i icon="icon-minus"></i>
+                        <input id="grown" type="text" name="grown" value=""><br>                
+                        <i icon="icon-plus"></i>            
+                    </div>
+                    <div class="search-form-number">
+                        <label for="children">Дети:</label>
+                        <i icon="icon-minus"></i>
+                        <input id="children" type="text" name="children" value=""> 
+                        <i icon="icon-plus"></i>  
+                    </div>
+                </div>
+                <button class="search-form-btn" type="submit">Найти</button>
+            </form>
+        </div>
     </div>
     </body>
 </html>
