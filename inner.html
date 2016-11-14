@@ -9,7 +9,7 @@
     <body>
     <div class="container">
     <header class="main-header clearfix">
-        <a class="logo">
+        <a href="index.html" class="logo">
         <img src="img/logo.png" width="138" height="70" alt="Седона">
         </a>   
         <nav class="main-navigation">
@@ -35,18 +35,18 @@
         <div class="selection-left">
             <h2 class="selection-title">Инфраструктура:</h2>
             <input class="filter-input" id="pool" type="checkbox" name="pool" value="pool" checked>
-            <label class="filter-variant" for="pool">Бассейн</label><br>                
+            <label class="filter-variant" for="pool">Бассейн</label>               
             <input class="filter-input" id="parking" type="checkbox" name="parking" value="parking">
-            <label class="filter-variant" for="parking">Парковка</label>     <br>           
+            <label class="filter-variant" for="parking">Парковка</label>         
             <input class="filter-input" id ="wifi" type="checkbox" name="wifi" value="wifi">
             <label class="filter-variant" for="wifi">Wi-fi</label>
         </div>
         <div class="selection-left">
             <h2 class="selection-title">Тип жилья:</h2>                
             <input class="filter-input" id="hotel" type="checkbox" name="hotel" value="hotel" checked>
-            <label class="filter-variant" for="hotel">Гостиница</label><br>               
+            <label class="filter-variant" for="hotel">Гостиница</label>              
             <input class="filter-input" id="motel" type="checkbox" name="motel" value="motel" checked>
-            <label class="filter-variant" for="motel">Мотель</label><br>                
+            <label class="filter-variant" for="motel">Мотель</label>               
             <input class="filter-input" id="apartments" type="checkbox" name="apartments" value="apartments" checked>
             <label class="filter-variant" for="apartments">Апартаменты</label>
         </div>
@@ -73,7 +73,7 @@
         </div>
     </form>    
     </div>
-    <div class="hotel-sorting clearfix">
+    <div class="hotel-sorting">
         <span class="hotel-title">Найдено: 3</span>
         <span class="hotel-triage">Сортировка</span>
         <div class="hotel-label">
@@ -81,11 +81,12 @@
             <a href="#" class="type">По типу</a>
             <a href="#" class="rating">По рейтингу</a>
         </div >
-        <a href="#" class="icon-up"></a>
-        <a href="#" class="icon-down"></a>
-        
+        <div class="hotel-sorting-right">
+                <a class="hotel-icon-up" href="#"></a>
+                <a class="hotel-icon-down" href="#"></a>
+        </div>
     </div>
-    <div class="hotel-item">
+    <div class="hotel-item clearfix">
         <div class="hotel-left-block">
             <img src="img/hotel-amara.jpg" width="135" height="90" alt="Amara Resort">
         </div>
@@ -103,7 +104,7 @@
             </div>           
         </div>            
         <div class="hotel-right-block">
-            <div class="hotel-star"></div>
+            <div class="hotel-star result-ratings-bad "></div>
             <div class="hotel-rating">Рейтинг: 8,5</div>
         </div>
              
@@ -126,7 +127,7 @@
             </div>
         </div>
         <div class="hotel-right-block">
-            <div class="hotel-star"></div>
+            <div class="hotel-star result-ratings-good"></div>
             <div class="hotel-rating">Рейтинг: 8,9</div>
         </div>  
          
@@ -149,12 +150,12 @@
             </div>
        </div>
         <div class="hotel-right-block">
-            <div class="hotel-star"></div>
-            <div class="hotel-rating">Рейтинг: 9,2</div>
+            <div class="hotel-star result-ratings-excellent"></div>
+            <div class="hotel-rating ">Рейтинг: 9,2</div>
         </div>          
     </div>
     
-    <footer class="main-footer">
+    <footer class="main-footer clearfix">
             <div class="footer-visit">#Visitssedona</div>
             <div class="footer-social">
                 <a href="#" class="social-btn socials-tv">Твитер</a>
@@ -163,7 +164,7 @@
             </div>
             <div class="copyright">
                 <p>Website by</p>
-                <a class="logo-htmlacademy"><img src="img/html-academy.png" wight="" height="" alt="html academy"></a>
+                <a class="logo-htmlacademy" href="https://htmlacademy.ru/">html academy</a>
             </div>
         </footer>    
     </div>    

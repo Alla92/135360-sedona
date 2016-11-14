@@ -78,7 +78,7 @@ a {
     }
 
 .title-definition{
-     font-weight: bold;
+    font-weight: bold;
     padding-top: 43px;
     padding-bottom: 15px;
     font-size: 21px;
@@ -86,7 +86,7 @@ a {
     color: #000;}
 
 .desc-definition p{
-    padding-bottom: 38px;
+    padding-bottom: 36px;
     font-size: 14px;
     line-height: 26px;}
 
@@ -132,8 +132,8 @@ a {
     float: right;
 }
 .benefits-text p {
-    padding-top: 10px;
-    padding-bottom: 37px;
+    padding-top: 7px;
+    padding-bottom: 40px;
     padding-left: 12%;
     padding-right: 12%;
     font-size: 14px;
@@ -141,8 +141,8 @@ a {
 }
 
 .benefits-text h2{
-    padding-top: 37px;
-    padding-bottom: 4px;
+    padding-top: 36px;
+    padding-bottom: 5px;
     padding-left: 30%;
     padding-right: 30%;
     font-size: 21px;
@@ -170,7 +170,7 @@ a {
 .features-item {   
     box-sizing: border-box;
     margin-top: 50px;
-    margin-bottom: 66px; 
+    margin-bottom: 69px; 
     width: 33.3334%;
     text-align: center;
     float: left;}
@@ -186,25 +186,25 @@ a {
     content: '';
     position: absolute;
     left: 50%;
-    top: -17;
+    top: -17px;
     width: 78px;
     height: 88px;
-    margin-left: -38px;
-    background: transparent url('../img/sprites-icons.png') no-repeat;}
+    transform: translateX(-50%);
+    background: transparent url('../img/result.png') no-repeat;}
 
  .features-title-house::before {
-    background-position: 0 -300px;}
+    background-position: 0 -157px;}
 
 .features-title-food::before {
-    background-position: 0 3;}
+    background-position: 0 8px;}
 
 .features-title-souvenirs::before {
-    background-position: 0 -150px;}
+    background-position: 0 -77px;}
 
 .features-item p{
     font-size: 14px;
     line-height: 21px;
-    padding-top: 8px;
+    padding-top: 7px;
     padding-left: 13%;
     padding-right: 13%;
 }
@@ -324,17 +324,15 @@ a {
      background-position: 16px -78px;
 }
 
-
 .copyright {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;    
+    font-size: 0px;
     width: 33,3334;
     padding-left: 136px;
     vertical-align: middle;
-    display: inline-block;}
+    display: inline-block;
+    }
 
-.copyright p, .logo-htmlacademy{
+.logo-htmlacademy {
     display: inline-block;
     vertical-align: middle;
 }
@@ -343,8 +341,19 @@ a {
     padding-left: 10px;
     font-size: 14px;
     line-height: 26px;
-    font-weight: normal;}
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.logo-htmlacademy {
+    width: 131px;
+    height: 39px;
+    margin: 4px 8px;
+    text-decoration: none;
+    background: transparent url('../img/result.png') no-repeat;
+    background-position: 0 -339px;
+}
 
 .search {
     position: absolute;    
@@ -451,36 +460,43 @@ a {
 }
 
 .filter-variant {
-    display: inline-block;
+    display: block;
     font-size: 14px;
     line-height: 21px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 25px;
     }
 
 .filter-variant::before {
     content: '';
-    position: relative;
-    display: inline-block;
-    left: -22px;
-    width: 16px;
-    height: 16px;
-    border: 2px solid white;
-    border-radius: 4px;
-    }
-
+    float: left;
+    margin-right: 11px;
+    width: 27px;
+    height: 28px;
+    background: transparent url('../img/result.png') no-repeat;
+    background-position: 0 -276px;
+    opacity: 1;
+}
+    
 .filter-variant::after {
     content: "";
     float: left;
-    display: inline-block;
-    width: 16px;
-    height: 6px;
-    border: 5px solid white;
-    border-top: none;
-    border-right: none;
-    transform: rotate(-45deg);    
+    margin-left: -38px;
+    width: 27px;
+    height: 28px;
+    background: transparent url('../img/result.png') no-repeat;
+    background-position: 0 -308px; 
     opacity: 0;
    }
+
+#pool:checked ~ label[for="pool"]::before,
+#parking:checked ~ label[for="parking"]::before,
+#wifi:checked ~ label[for="wifi"]::before,
+#hotel:checked ~ label[for="hotel"]::before,
+#motel:checked ~ label[for="motel"]::before,
+#apartments:checked ~ label[for="apartments"]::before
+{
+     opacity: 0;
+}
 
 #pool:checked ~ label[for="pool"]::after,
 #parking:checked ~ label[for="parking"]::after,
@@ -489,16 +505,17 @@ a {
 #motel:checked ~ label[for="motel"]::after,
 #apartments:checked ~ label[for="apartments"]::after
 {
-    opacity: 1;}
-
+    opacity: 1;
+    
+}
 
 .selection-right {
-    margin-left: 12px;
+    width: 328px;
     padding-right: 74px;
     float: right;}
 
 .selection-right h2 {
-    padding-top: 14px;
+    padding-top: 13px;
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
@@ -508,7 +525,7 @@ a {
 .selection-group {
     width: 313px;
     position: relative;
-    left: 2px;
+    left: 11px;
     border: 2px solid #fff;
     color: white;
     border-radius: 3px;
@@ -518,7 +535,7 @@ a {
 .selection-group::before {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 51%;
     top: 5px;
     width: 2px;
     height: 21px;
@@ -528,24 +545,25 @@ a {
 
 .selection-group label {
     display: inline-block;
-    vertical-align: top;
     width: 40%;
-    padding: 5px 15px;
+    padding: 5px ;
+    padding-left: 26px;
     font-size: 14px;
-    text-align: right;
+    text-align: center;
+    
       }
 
 .selection-input{
-    max-width: 20%;
-    padding-right: 0;
+    max-width: 5%;
     border: none;
     color: #fff;
-    background: transparent;
-    text-align: center;
-        }
+    background: transparent
+}
 
 .range-controls{
     position: relative;
+    width: 315px;
+    left: 14px;
     height: 2px;
     margin: 20px 0;
     background: #fff;;
@@ -553,7 +571,7 @@ a {
 
 .toggle {
     position: absolute;
-    top: -8px;
+    top: -9px;
     padding: 2px;
     border: 8px solid #fff;
     border-radius: 50%;
@@ -568,12 +586,14 @@ a {
     right: 45px;}
 
 .btn-filter {
-    margin: 12px;
-    margin-left: 27%;
-    padding: 5px 32px;
+    margin-left: 97px;
+    margin-top: 13px;
+    padding: 4px 30px;
     border: 2px solid #fff;
     border-radius: 3px;
     font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
     background: transparent;
     color: white;}
 
@@ -583,7 +603,7 @@ a {
     padding-bottom: 30px;
     padding-left: 73px;
     min-height: 16px;
-    
+    border-bottom: 1px solid #e5e5e5;    
 }
 
 .hotel-triage{
@@ -623,25 +643,16 @@ a {
 
 .hotel-item {
     float: left;
-    width: 100%;
-    }
-
-.hotel-item::before{
-    content: "";
-    display: block;
-    border-top: 1px solid #e5e5e5; 
-}
-.hotel-item:last-child::after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid #e5e5e5; 
-}
+    width: 100%;     
+    border-bottom: 1px solid #e5e5e5; }
 
 .hotel-left-block {
     display: inline-block;
     margin-left: 73px;
     margin-right: 25px;
-    margin-top: 29px;}
+    margin-top: 29px;
+    margin-bottom: 25px;}
+
 
 .hotel-info {
     display: inline-block;
@@ -672,21 +683,13 @@ a {
 
 .hotel-info-part{
     float: right;
-    width: 142px;
-}
-
-
-.hotel-right-block {
-    float: right;
-    box-sizing: border-box;
-    width: 190px;  
-}
+    width: 142px;}
 
 .hotel-more {
     display: block;
     width: 100%;
     padding-top: 4px;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
     text-align: center;
     color: white;
     background-color: #81b3d2;
@@ -697,16 +700,16 @@ a {
     display: block;
     width: 100%;
     padding-top: 4px;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
     text-align: center;
     color: white;
     background-color: #766357;
     font-weight: bold;}
 
-.hotel-star {
-    width: 114px;
-    min-height: 17px;
-    margin-bottom: 49px;
+.hotel-right-block {
+    float: right;
+    box-sizing: border-box;
+    width: 180px;  
 }
 
 .hotel-rating {
@@ -716,9 +719,32 @@ a {
     text-align: center;
     background-color: #f2f2f2;
 }
-hr {
-    width: 100%;
-    height:1px;
-    border: none; 
-    background-color: #e5e5e5;; 
+
+.hotel-star {
+    min-height: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
+
+.result-ratings-bad{
+    width: 98px;
+    margin-left: 20px;
+    background: url(../img/result.png) no-repeat;
+    background-position: 0px -248px ;
+}
+
+.result-ratings-good {
+    width: 45px;
+    margin-left: 65px;
+    background: url(../img/result.png) no-repeat;
+    background-position: 0px -248px  ;
+    }
+
+.result-ratings-excellent {
+   width: 70px;
+   margin-left: 45px;
+   background: url(../img/result.png) no-repeat;
+   background-position: 0px -248px  ;
+}
+
+
