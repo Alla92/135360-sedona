@@ -641,6 +641,48 @@ a {
     font-weight: bold;
 }
 
+.hotel-sorting-right {
+    float: right;
+    width: 36px;
+    margin-right: 70px;;
+    padding-top: 10px;    
+    font-size: 0;
+}
+
+.hotel-sorting-right a {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    vertical-align: top;
+}
+
+.hotel-icon-down  {
+    position: relative;
+    margin-left: 12px;
+}
+
+.hotel-icon-up::before,
+.hotel-icon-down::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    content: "";
+    border-width: 10px 5px 0;
+    border-style: solid;
+    border-color: #81b3d2 transparent transparent;
+}
+
+.hotel-icon-up {
+    position: relative;
+}
+
+.hotel-icon-up::before {
+    border-width: 0 5px 10px;
+    border-color: transparent transparent #e5e5e5;
+}
+
 .hotel-item {
     float: left;
     width: 100%;     
