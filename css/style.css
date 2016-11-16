@@ -6,6 +6,7 @@ body {
     font-family: 'PT Sans', Arial, sans-serif;
     padding: 0;
     margin: 0;
+    background: #f2f2f2;
     text-transform: uppercase;}
 
 h1 {
@@ -40,11 +41,15 @@ a {
 .main-navigation li {
     display: inline-block;    
     width: 20%;
+    padding: 15px 0;
     }
 
-.main-navigation-link{
-    display: block;
-    padding: 15px 0;
+.main-navigation li:nth-child(2){
+    margin-right: 20%;
+    }
+
+.main-navigation a{
+    display: block;    
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
@@ -52,9 +57,26 @@ a {
     text-align: center;
     }
 
-.main-navigation li:nth-child(2){
-    margin-right: 20%;
-    }
+.main-navigation a:hover {
+    color: #81b3d2;
+}
+
+.main-navigation a:active {
+    color: #000;
+    opacity: .3;
+}
+
+.main-navigation .active {
+    color: #766357;
+}
+
+.main-navigation .active:hover {
+    color: #604e43;
+}
+
+.main-navigation .active:active {
+    color: #766357;
+}
 
 .logo {
     width: 138px;
@@ -271,14 +293,20 @@ a {
     font-weight: bold;}
 
 .map {
-    background: url("../img/map.jpg");
+    position: relative;
+    background: url(../img/map.jpg);
     height: 476px;
     width: 100%;
+    z-index: 2;
 }
 
 .main-footer {
+    position: relative;
     padding: 0;
     width: 100%;    
+    background-color: white;
+    opacity: 0.9;
+    z-index: 5;
     }
 
 .footer-visit {  
@@ -324,6 +352,14 @@ a {
      background-position: 16px -78px;
 }
 
+.social-btn:hover {
+    background-color: #669ec0;
+}
+
+.social-btn:active {
+    background-color: #5496bd;
+}
+
 .copyright {
     font-size: 0px;
     width: 33,3334;
@@ -351,8 +387,16 @@ a {
     height: 39px;
     margin: 4px 8px;
     text-decoration: none;
-    background: transparent url('../img/result.png') no-repeat;
-    background-position: 0 -339px;
+    background: transparent url('../img/logo-sprite.png') no-repeat;
+    background-position: 0 0px;
+}
+
+.logo-htmlacademy:hover {
+    background-position: 0 -48px;
+}
+
+.logo-htmlacademy:active {
+    background-position: 0 -95px;
 }
 
 .search {
@@ -509,6 +553,31 @@ a {
     
 }
 
+#pool:disabled ~ label[for="pool"]::before,
+#parking:disabled ~ label[for="parking"]::before,
+#wifi:disabled ~ label[for="wifi"]::before,
+#hotel:disabled ~ label[for="hotel"]::before,
+#motel:disabled ~ label[for="motel"]::before,
+#apartments:disabled ~ label[for="apartments"]::before 
+{
+    background: transparent url('../img/result.png') no-repeat;
+    background-position: -43px -274px;
+}
+
+#pool:disabled:checked ~ label[for="pool"]::after,
+#parking:disabled:checked ~ label[for="parking"]::after,
+#wifi:disabled:checked ~ label[for="wifi"]::after,
+#hotel:disabled:checked ~ label[for="hotel"]::after,
+#motel:disabled:checked ~ label[for="motel"]::after,
+#apartments:disabled:checked ~ label[for="apartments"]::after
+{
+    background: transparent url('../img/result.png') no-repeat;
+    background-position: -43px -309px;
+}
+
+
+
+
 .selection-right {
     width: 328px;
     padding-right: 74px;
@@ -577,7 +646,12 @@ a {
     border-radius: 50%;
     outline: none;
     background: #ababab;
+    cursor: pointer;
     }
+
+ .toggle:hover {
+    background: #1c4f80;
+}
 
 .min-toggle{
     left: 0;}
@@ -597,6 +671,10 @@ a {
     background: transparent;
     color: white;}
 
+.btn-filter:hover {
+    background: white;
+    color: black;
+}
 
 .hotel-sorting {
     padding-top: 30px;
@@ -623,8 +701,29 @@ a {
 
 .hotel-label a {
     position: relative;
+    color: #d1d1d1;
     margin-right: 30px;}
 
+.hotel-label a:hover {
+    color: #81b3d2;
+}
+
+.hotel-label a:active {
+    color: #000;
+}
+
+.hotel-label a.active {
+    color: #81b3d2;
+}
+
+.hotel-label:active,
+.hotel-label a.active {
+    opacity: 1;
+}
+.hotel-label a:active::after,
+.hotel-label a.active::after {
+    border: none;
+}
 
 .hotel-label a::after {
     content: '';
@@ -671,7 +770,7 @@ a {
     content: "";
     border-width: 10px 5px 0;
     border-style: solid;
-    border-color: #81b3d2 transparent transparent;
+    border-color: #e5e5e5 transparent transparent;
 }
 
 .hotel-icon-up {
@@ -681,6 +780,31 @@ a {
 .hotel-icon-up::before {
     border-width: 0 5px 10px;
     border-color: transparent transparent #e5e5e5;
+}
+
+
+.hotel-icon-up:hover:before {
+    border-color: transparent transparent #000000;
+}
+
+.hotel-icon-down:hover:before {
+    border-color: #000000 transparent transparent;
+}
+
+.hotel-icon-up:active:before {
+    border-color: transparent transparent #81b3d2;
+}
+
+.hotel-icon-down:active:before {
+    border-color: #81b3d2 transparent transparent;
+}
+
+.hotel-icon-up.hotel-active:before {
+    border-color: transparent transparent #81b3d2;
+}
+
+.hotel-icon-down.hotel-active:before {
+    border-color: #81b3d2 transparent transparent;
 }
 
 .hotel-item {
@@ -711,6 +835,13 @@ a {
     max-width: 258px;
     }
 
+.hotel-result-title:hover {
+    color: #81b3d2;
+}
+
+.hotel-result-title:active {
+    color: #b2b2b2;
+} 
 
 .hotel-info-parttel {
     float: left;
@@ -733,10 +864,18 @@ a {
     padding-top: 4px;
     padding-bottom: 2px;
     text-align: center;
-    color: white;
+    color: #fff;
     background-color: #81b3d2;
     font-weight: bold;
 }
+
+.hotel-more:hover {
+    background-color: #669ec0;}
+
+.hotel-more:active {
+    color: #84b4d0;
+    background-color: #5496bd;
+    }
 
 .hotel-reservation {
     display: block;
@@ -744,9 +883,18 @@ a {
     padding-top: 4px;
     padding-bottom: 2px;
     text-align: center;
-    color: white;
+     color: #fff;
     background-color: #766357;
     font-weight: bold;}
+
+.hotel-reservation:hover {
+    background-color: #604e43;
+}
+
+.hotel-reservation:active {
+    color: #857871;
+    background-color: #503e33;
+}
 
 .hotel-right-block {
     float: right;
