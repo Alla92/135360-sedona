@@ -122,11 +122,11 @@ a {
 .welcome::after {
     content: '';
     position: absolute;
-    bottom: -10px;    
-    height: 67px;
+    bottom: 0px;    
+    height: 57px;
     width: 100%;
-    background: transparent url(../img/white.png) no-repeat;
-    background-size: 100%; }
+    background: url(../img/white.png) no-repeat;
+    background-position: center;}
 
 .slogan {
     width: 458px;
@@ -293,15 +293,18 @@ a {
     font-weight: bold;}
 
 .map {
-    position: relative;
+    
     background: url(../img/map.jpg);
-    height: 473px;
+    height: 100%;
     width: 100%;
-    z-index: 2;
+    min-height: 256%;
+    position: absolute;
+    z-index: 1;
 }
 
 .main-footer {
-    position: relative;    
+    position: relative;
+    height: 473px;
     }
 
 .footer-bloc {
@@ -311,9 +314,10 @@ a {
     box-sizing: border-box;
     padding: 0 6%;    
     font-size: 0;
-    background: rgba(255,255,255,9);
-    z-index: 5; 
+    background: rgba(255,255,255,.9);
+    z-index: 10; 
     left: 0;
+    
 }
 
 
