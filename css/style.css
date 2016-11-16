@@ -302,18 +302,20 @@ a {
 
 .main-footer {
     position: relative;
-    padding: 0;
-    width: 100%;    
+    padding: 0 6%;
+    
+    font-size: 0;
     background-color: white;
     opacity: 0.9;
     z-index: 5;
     }
 
 .footer-visit {  
+    box-sizing: border-box;
     font-size: 21px;
     font-weight: bold;
     text-decoration: none;
-    width: 33,3334;
+    width: 33.334%;
     padding-top: 45px;
     padding-bottom: 51px;
     padding-left: 133px;
@@ -321,12 +323,11 @@ a {
     display: inline-block;
     vertical-align: middle;}
 
-.footer-social {
-    width: 33,3334;
+.footer-social { 
+    box-sizing: border-box;
+    width: 33.334%;
     padding-top: 30px;
     padding-bottom: 34px;
-    padding-left: 244px;
-    padding-right: 82px;
     vertical-align: middle;
     display: inline-block; text-align: center;}
 
@@ -334,7 +335,8 @@ a {
     display: inline-block;
     width: 47px;
     height: 47px;
-    font-size: 0;
+    margin-right: 3px;
+    margin-left: 3px;
     vertical-align: top;
     text-decoration: none;
     background: #81b3d2 url("../img/sprite-social.png") no-repeat center;
@@ -361,8 +363,8 @@ a {
 }
 
 .copyright {
-    font-size: 0px;
-    width: 33,3334;
+     box-sizing: border-box;
+    width: 33.334%;
     padding-left: 136px;
     vertical-align: middle;
     display: inline-block;
@@ -383,7 +385,7 @@ a {
 }
 
 .logo-htmlacademy {
-    width: 131px;
+    width: 114px;
     height: 39px;
     margin: 4px 8px;
     text-decoration: none;
@@ -467,11 +469,13 @@ a {
     line-height: 26px;
     font-weight: bold;}
 
+.filter-form {
+    padding: 0 6%;
+}
 
 .filter {
     background-image: url(../img/filter-bg.jpg);
-    width: 100%;
-    height: 219px;}
+    margin-bottom: 30px;}
 
 .selection-title {
     font-size: 16px;
@@ -485,7 +489,9 @@ a {
     padding-left: 73px;}
 
 .selection-left { 
-    display: inline-block;
+    width: 30%;
+    min-width: 225px;
+    max-width: 275px;
     font-size: 14px;
     line-height: 21px;
     color: white;
@@ -579,7 +585,9 @@ a {
 
 
 .selection-right {
-    width: 328px;
+    width: 30%;
+    min-width: 225px;
+    max-width: 320px;
     padding-right: 74px;
     float: right;}
 
@@ -677,9 +685,7 @@ a {
 }
 
 .hotel-sorting {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 73px;
+    padding: 30px 6%;
     min-height: 16px;
     border-bottom: 1px solid #e5e5e5;    
 }
@@ -809,12 +815,13 @@ a {
 
 .hotel-item {
     float: left;
-    width: 100%;     
+    width: 100%;  
+    padding: 0 6%;
+    box-sizing: border-box;
     border-bottom: 1px solid #e5e5e5; }
 
 .hotel-left-block {
     display: inline-block;
-    margin-left: 73px;
     margin-right: 25px;
     margin-top: 29px;
     margin-bottom: 25px;}
@@ -899,7 +906,7 @@ a {
 .hotel-right-block {
     float: right;
     box-sizing: border-box;
-    width: 180px;  
+      
 }
 
 .hotel-rating {
@@ -917,21 +924,21 @@ a {
 }
 
 .result-ratings-bad{
-    width: 98px;
+   
     margin-left: 20px;
     background: url(../img/result.png) no-repeat;
     background-position: 0px -248px ;
 }
 
 .result-ratings-good {
-    width: 45px;
+   
     margin-left: 65px;
     background: url(../img/result.png) no-repeat;
     background-position: 0px -248px  ;
     }
 
 .result-ratings-excellent {
-   width: 70px;
+   
    margin-left: 45px;
    background: url(../img/result.png) no-repeat;
    background-position: 0px -248px  ;
