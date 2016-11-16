@@ -308,8 +308,8 @@ a {
     z-index: 5;
     }
 
-footer-bloc {
-     position: absolute;
+.footer-bloc {
+    position: absolute;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
