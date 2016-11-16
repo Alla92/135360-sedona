@@ -301,22 +301,19 @@ a {
 }
 
 .main-footer {
-    position: relative;
-    padding: 0 6%;    
-    font-size: 0;
-    background: rgba(255,255,255,.9);
-    z-index: 5;
+    position: relative;    
     }
 
 .footer-bloc {
     position: absolute;
-    bottom: 0;
+    bottom: 0;    
     width: 100%;
     box-sizing: border-box;
     padding: 0 6%;    
     font-size: 0;
-    background: rgba(255,255,255,.9);
-    z-index: 5;
+    background: rgba(255,255,255,9);
+    z-index: 5; 
+    left: 0;
 }
 
 
