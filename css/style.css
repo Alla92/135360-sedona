@@ -295,20 +295,30 @@ a {
 .map {
     position: relative;
     background: url(../img/map.jpg);
-    height: 476px;
+    height: 473px;
     width: 100%;
     z-index: 2;
 }
 
 .main-footer {
     position: relative;
-    padding: 0 6%;
-    
+    padding: 0 6%;    
     font-size: 0;
-    background-color: white;
-    opacity: 0.9;
+    background: rgba(255,255,255,.9);
     z-index: 5;
     }
+
+footer-bloc {
+     position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 6%;    
+    font-size: 0;
+    background: rgba(255,255,255,.9);
+    z-index: 5;
+}
+
 
 .footer-visit {  
     box-sizing: border-box;
@@ -316,9 +326,7 @@ a {
     font-weight: bold;
     text-decoration: none;
     width: 33.334%;
-    padding-top: 45px;
-    padding-bottom: 51px;
-    padding-left: 133px;
+    padding-left: 60px;
     text-transform: uppercase;
     display: inline-block;
     vertical-align: middle;}
@@ -351,7 +359,7 @@ a {
 }
 
 .social-yt {
-     background-position: 16px -78px;
+     background-position: 14px -78px;
 }
 
 .social-btn:hover {
@@ -402,7 +410,10 @@ a {
 }
 
 .search {
-    position: absolute;    
+    position: absolute;  
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
     width: 466px;
     padding: 53px;
     background-color: indianred;
@@ -471,25 +482,19 @@ a {
 
 .filter-form {
     padding: 0 6%;
+    background: #6c94bb url(../img/filter-bg.jpg);
 }
-
-.filter {
-    background-image: url(../img/filter-bg.jpg);
-    margin-bottom: 30px;}
 
 .selection-title {
     font-size: 16px;
     line-height: 21px;
     padding-top: 13px;
-    padding-bottom: 13px;
-  
+    padding-bottom: 13px;  
     font-weight: bold;}
 
-.filter-options {
-    padding-left: 73px;}
 
 .selection-left { 
-    width: 30%;
+    
     min-width: 225px;
     max-width: 275px;
     font-size: 14px;
@@ -498,7 +503,7 @@ a {
     float: left;}
 
 .selection-left:first-child {
-      margin-right: 120px;
+     
     }
 
 .selection-left input {
@@ -585,10 +590,8 @@ a {
 
 
 .selection-right {
-    width: 30%;
     min-width: 225px;
     max-width: 320px;
-    padding-right: 74px;
     float: right;}
 
 .selection-right h2 {
@@ -749,7 +752,7 @@ a {
 .hotel-sorting-right {
     float: right;
     width: 36px;
-    margin-right: 70px;;
+    
     padding-top: 10px;    
     font-size: 0;
 }
