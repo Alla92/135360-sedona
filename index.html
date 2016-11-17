@@ -100,7 +100,7 @@
         </main>    
         <footer class="main-footer">
           <div class="map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=W-7mikoZzUTkC_5GMJ_DPcwfHlMedPuw&amp;width=1200&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>                    
+       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=W-7mikoZzUTkC_5GMJ_DPcwfHlMedPuw&amp;width=1200&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>  
         </div> 
            
            <div class="search">
@@ -108,32 +108,40 @@
                 <div class="search-date">
                     <div class="search-form">
                         <label for="arrive">Дата заезда:</label>
-                        <input id="arrival" type="date" name="arrival" value="Дата заезда">
+                        <div class="search-input">
+                            <input class="form-input" id="arrival" type="date" name="arrival" value="24 апреля 2016">
+                             <i class="icon-calendar"></i>
+                        </div>
                     </div>
                     <div class="search-form">
                         <label for="exit">Дата выезда:</label>
-                        <input id="exit" type="date" name="exit" value="Дата выезда"><br>
+                        <div class="search-input">
+                        <input class="form-input" id="exit" type="date" name="exit" value="4 июля 2016">
+                         <i class="icon-calendar"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="search-form">
                     <div class="search-form-number">
                         <label for="grown">Взрослые:</label>
-                        <i icon="icon-minus"></i>
-                        <input id="grown" type="text" name="grown" value=""><br>                
-                        <i icon="icon-plus"></i>            
+                        <i class="icon-minus"></i>
+                        <input class="form-input" id="grown" type="text" name="grown" value="2"><br>                
+                        <i class="icon-plus"></i>            
                     </div>
                     <div class="search-form-number">
                         <label for="children">Дети:</label>
-                        <i icon="icon-minus"></i>
-                        <input id="children" type="text" name="children" value=""> 
-                        <i icon="icon-plus"></i>  
+                        
+                            <i class="icon-minus"></i>
+                            <input class="form-input" id="children" type="text" name="children" value="0"> 
+                            <i class="icon-plus"></i>  
+                        
                     </div>
                 </div>
                 <button class="search-form-btn" type="submit">Найти</button>
             </form>
         </div>
            
-           <div class="footer-bloc">
+           <div class="footer-block">
             <div class="footer-visit">#Visitssedona</div>
             <div class="footer-social">
                 <a href="#" class="social-btn socials-tv">Твитер</a>
