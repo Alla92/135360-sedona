@@ -16,6 +16,23 @@ h1 {
 h2 {
     font-size: 16px;}
 
+
+@-webkit-keyframes slide 
+{0% {transform: translateY(-400px);}
+    100% {transform:translateY(0);}}
+
+@-moz-keyframes slide
+{0% {transform: translateY(-400px);} 
+    100% {transform:translateY(0);}}
+
+@-o-keyframes slide 
+{0% {transform: translateY(-400px);} 
+    100% {transform:translateY(0);}}
+
+@keyframes slide
+{0% {transform: translateY(-400px);} 
+    100% {transform:translateY(0);}}
+
 .container {    
     min-width: 768px;
     max-width: 1200px;
@@ -159,7 +176,8 @@ a {
 
 
 .benefits{
-    
+    height: 256px;
+    overflow: hidden;
     }
 
 .benefits-text {  
@@ -435,16 +453,22 @@ a {
 }
 
 .search {
+    display: none;
     position: absolute;
     box-shadow: 0 0 15px rgba(0, 1, 1, 0.2); 
-    left: 50%;
+    margin-left: 26.3%;
+    transform: translateX(0%);
     z-index: 10;
     top: 0;
-    transform: translateX(-50%);
     width: 464px;
     padding: 53px;
     background-color: #fff;
     font-size: 0;
+    }
+
+.search-show {
+    display: block;
+    animation: slide 0.6s; 
 }
 
 .search-form {
