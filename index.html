@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Главная страница</title>
-        <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+        <link href="css/normalize.min.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
     </head>
     <body>
        <div class="container">
@@ -32,7 +32,7 @@
         </header>
         <main>   
             <div class="welcome">
-                <div class="slogan"><img src="img/welcome.png" wight="458" height="352" alt="Welcome to the gorgeous"></div>        
+                <div class="slogan"><img src="img/welcome.png" width="458" height="352" alt="Welcome to the gorgeous"></div>        
             </div>         
         <div class="desc-definition">
             <h1 class="title-definition">Седона - Небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
@@ -45,7 +45,7 @@
                 <p>Седона &ndash; не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="benefits-image">
-               <img src="img/index-benefits.jpg" wight="512" height="256" alt="Настоящий городок">
+               <img src="img/index-benefits.jpg" width="512" height="256" alt="Настоящий городок">
             </div>
         </div>
         <div class="features clearfix">
@@ -64,7 +64,7 @@
         </div>
         <div class="benefits clearfix">
             <div class="benefits-image">
-                <img src="img/index-benefits1.jpg" wight="1200" height="256" alt="Мост дьявола">
+                <img src="img/index-benefits1.jpg" width="1200" height="256" alt="Мост дьявола">
             </div>
             <div class="benefits-text">
                 <h2>Там есть<br> мост дьявола</h2>
@@ -93,29 +93,29 @@
             <h2 class="offer-title">Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <div class="offer-search">
-            <a href="#" class="search-hostel">Поиск гостиницы в Седоне</a>
+            <a href="search.html" class="search-hostel">Поиск гостиницы в Седоне</a>
             </div>
         </div>
                   
         </main>    
         <footer class="main-footer">
         <div class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=W-7mikoZzUTkC_5GMJ_DPcwfHlMedPuw&amp;width=100%&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>  
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=W-7mikoZzUTkC_5GMJ_DPcwfHlMedPuw&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>  
         </div>            
            <div class="search">
-            <form action="#" method="post" action="https://echo.htmlacademy.ru">
+            <form method="post" action="https://echo.htmlacademy.ru">
                 <div class="search-date">
                     <div class="search-form">
                         <label for="arrive">Дата заезда:</label>
                         <div class="search-input">
-                            <input class="form-input" id="arrival" type="date" name="arrival" value="24 апреля 2016">
+                            <input class="form-input" id="arrive" type="text" name="arrival" value="24 апреля 2016">
                              <i class="icon-calendar"></i>
                         </div>
                     </div>
                     <div class="search-form">
                         <label for="exit">Дата выезда:</label>
                         <div class="search-input">
-                        <input class="form-input" id="exit" type="date" name="exit" value="4 июля 2016">
+                        <input class="form-input" id="exit" type="text" name="exit" value="4 июля 2016">
                          <i class="icon-calendar"></i>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
             </div>
         </footer>        
     </div>
-    <script src="js/script.js"></script>        
+    <script src="js/script.min.js"></script>        
    </body>
 </html>
 

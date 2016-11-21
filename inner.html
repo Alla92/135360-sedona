@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Каталог</title>
-        <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.min.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -24,12 +25,12 @@
                                 <a href="#" class="main-navigation-link">Карта штата</a>
                             </li>
                             <li>
-                                <a href="#" class="active" class="main-navigation-link">Гостиницы</a>
+                                <a href="#" class="active main-navigation-link">Гостиницы</a>
                             </li>
                         </ul>
                     </nav>
             </header>
-                <form action="#" method="post" action="https://echo.htmlacademy.ru" class="filter-form clearfix">         
+                <form method="post" action="https://echo.htmlacademy.ru" class="filter-form clearfix">         
                     <div class="selection-left">
                         <h2 class="selection-title">Инфраструктура:</h2>
                         <input class="filter-input" id="pool" type="checkbox" name="pool" value="pool" checked>
@@ -73,7 +74,7 @@
                 <span class="hotel-title">Найдено: 3</span>
                 <span class="hotel-triage">Сортировка</span>
                 <div class="hotel-label">
-                    <a href="#" class="active" class="price">По цене</a>
+                    <a href="#" class="price active">По цене</a>
                     <a href="#" class="type">По типу</a>
                     <a href="#" class="rating">По рейтингу</a>
                 </div >
