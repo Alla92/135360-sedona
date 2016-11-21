@@ -178,6 +178,7 @@ a {
 .benefits{
     height: 256px;
     overflow: hidden;
+    background-color: #81b3d2;
     }
 
 .benefits-text {  
@@ -194,7 +195,7 @@ a {
 }
 .benefits-text p {
     padding-top: 2%;
-    padding-bottom: 11.8%;
+    padding-bottom: 12%;
     padding-left: 12%;
     padding-right: 12%;
     font-size: 14px;
@@ -217,6 +218,7 @@ a {
     min-height: 256px;
     float: left;
     }
+
 .benefits-image:nth-child(2) {
     float: right;
 }
@@ -348,6 +350,7 @@ a {
 .main-footer {
     position: relative;
     height: 593px;
+    overflow: hidden;
     }
 
 .footer-block {
@@ -416,7 +419,7 @@ a {
 .copyright {
     box-sizing: border-box;
     width: 33.334%;
-    padding-left: 115px;
+    text-align: right;
     vertical-align: middle;
     display: inline-block;
     }
@@ -456,8 +459,9 @@ a {
     display: none;
     position: absolute;
     box-shadow: 0 0 15px rgba(0, 1, 1, 0.2); 
-    margin-left: 26.3%;
-    transform: translateX(0%);
+    left: 50%;
+    margin-left: -285px;
+    /* transform: translateX(50%); */
     z-index: 10;
     top: 0;
     width: 464px;
@@ -489,6 +493,7 @@ a {
 
 .search-form input {
     position: relative;
+    outline: none;
     display: inline-block;
     width: 301px;
     padding-top: 5px;
@@ -502,6 +507,7 @@ a {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
+    min-height: 26px;
     
 }
 
@@ -554,7 +560,7 @@ a {
 
 .icon-minus {
     position: absolute;
-    top: 20px;
+    top: 16px;
     left: 127px;
     z-index: 6;
     width: 11px;
@@ -566,7 +572,7 @@ a {
 
 .icon-plus {
      position: absolute;
-    top: 15px;
+    top: 11px;
     left: 205px;
     z-index: 6;
     width: 16px;
@@ -609,6 +615,7 @@ a {
     width: 32px;
     padding-right: 40px;
     padding-left: 41px;
+    
     text-align: center;}
 
 
@@ -622,7 +629,9 @@ a {
     color: white;
     font-size: 21px;
     line-height: 26px;
-    font-weight: bold;}
+    font-weight: bold;
+cursor: pointer;
+outline: none;}
 
 .search-form-btn:hover {
     background-color: #669ec0;
@@ -649,7 +658,8 @@ a {
 .selection-left { 
     padding-right: 28px; 
     padding-bottom: 5px;
-    min-width: 225px;
+    min-width: 196px;
+    width: 15%;
     max-width: 275px;
     font-size: 14px;
     line-height: 21px;
@@ -685,7 +695,7 @@ a {
     width: 27px;
     height: 28px;
     background: transparent url('../img/result.png') no-repeat;
-    background-position: -1px -308px; 
+    background-position: -1px -307px; 
     opacity: 0;
    }
 
@@ -783,7 +793,8 @@ a {
       }
 
 .selection-input{
-    max-width: 5%;
+    width: 40%;
+    outline: none;
     border: none;
     color: #fff;
     background: transparent;
