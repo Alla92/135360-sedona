@@ -624,7 +624,7 @@ a {
 }
 
 .icon-minus,
-.con-plus {
+.icon-plus {
     position: relative;
     cursor: pointer;
 }
@@ -781,6 +781,7 @@ a {
     line-height: 21px;
     margin-bottom: 25px;
     word-break: break-word;
+    width: 150px;
 }
 
 .filter-variant::before {
