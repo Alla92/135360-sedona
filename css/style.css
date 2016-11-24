@@ -889,15 +889,15 @@ a {
 .selection-group label {
     display: inline-block;
     vertical-align: top;
-    width: 40%;
-    padding: 5px 5px 5px 26px;
+    width: 50%;
+    padding: 5px 0;
     font-size: 14px;
-    text-align: center;
+    text-align: right;
     cursor: pointer;
 }
 
 .selection-input {
-    width: 40%;
+    width: 50%;
     outline: none;
     border: none;
     color: #fff;
